@@ -19,3 +19,20 @@
 3: 服务端发送fin，用来关闭服务端和客户端的数据传输，进入last_wait状态
 4：客户端收到fin后，进入time_wait状态，并发送ack给服务端，服务端进入close状态
 
+dns解析过程：
+user向本地dns服务器发送请求，
+本地dns向根服务器发送查询请求.com，
+本地dns在向.com服务器查询baidu.com地址
+本地dns在向baidu.com发送请求查询www.baidu.com
+
+数据库事务四大特性（acid）
+1：原子性（atomicity）要么全完成，要么全回滚
+2：一致性（consistency）在开始之前和结束之后，数据库的完整性约束没有被破坏
+3：隔离性（isolation）在一个时间只有一个事务在运行。
+4：持久性（durability）在事务结束后，便会持久化到数据库。
+
+进程通信：消息队列，共享存储，socket
+
+
+
+
