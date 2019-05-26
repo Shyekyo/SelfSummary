@@ -55,10 +55,7 @@ handler：拒绝策略
 4：传输层
 5：应用层
 
-线程死锁，
-wait/notify,
 gc,
-hashmap,list
 大数据
 排序相关
 
