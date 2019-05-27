@@ -55,10 +55,29 @@ handler：拒绝策略
 4：传输层
 5：应用层
 
-gc,
-大数据
-排序相关
+设计模式
+1：单例
+2：工厂
+3：策略
+4：装饰者
+5：观察者
 
+kafka的message构成：（metadata,body）
+1：消息长度
+2：文件格式
+3：压缩格式
+4：crc32
 
-
-
+hdfs读过程：
+1：client请求namenode，获取要读数据所在的位置
+2：根据namenode返回结果，找一台建立socket
+3：datanode响应后，已packet单元打包
+4：客户端写入本地文件
+hdfs写过程：
+1：client请求namenode上传文件，namenode判断是否可上传
+2：返回
+3：client在请求放入那些机器
+4：namenode返回a，b，c
+5：client写入a，a->b b->c
+6: client已packet单元发送
+7：如果block不够在重复过程
